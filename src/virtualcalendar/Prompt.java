@@ -22,7 +22,7 @@ public class Prompt {
 
     public void runPrompt(){
         Scanner sc = new Scanner(System.in);
-        CalendarVirtual2 cal = new CalendarVirtual2();
+        CalendarVirtual cal = new CalendarVirtual();
 
         int month = 1;
         int year = 1;
