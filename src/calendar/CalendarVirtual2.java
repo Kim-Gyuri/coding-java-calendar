@@ -5,6 +5,7 @@ public class CalendarVirtual2 {
     private final static int[] MAX_DAYS = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private final static int[] LEAP_MAX_DAYS = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
+
     public boolean isLeapYear(int year) {
         return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
     }
@@ -14,7 +15,7 @@ public class CalendarVirtual2 {
     }
 
     public void printCalendar(int year, int month) {
-        System.out.printf("\t\t<%4d %3d월>\n", month);
+        System.out.printf("\t\t<%4d %3d월>\n",year, month);
         System.out.println("일\t월\t화\t수\t목\t금\t토");
         System.out.println("--------------------------");
 
@@ -31,4 +32,3 @@ public class CalendarVirtual2 {
 
 
 }
-
